@@ -1,6 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -21,23 +18,6 @@ export TERM="xterm-256color"
 
 # Set theme to PowerLevel9k 
 ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
-
-# PowerLevel9k configuration
-# Powerline font requiered. Installed: SourceCodePro+Powerline+Awesome+Regular
-# POWERLEVEL9K_MODE="awesome-patched"
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs dir_writable)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
-# POWERLEVEL9K_HOST_LOCAL_FOREGROUND="green"
-# POWERLEVEL9K_IP_FOREGROUND="black"
-# POWERLEVEL9K_IP_BACKGROUND="green"
-# POWERLEVEL9K_DIR_HOME_BACKGROUND='green'
-# POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
-# POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='green'
-# POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='black'
-# POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='yellow'
-# POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
-# POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-# POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 
 source $ZSH/oh-my-zsh.sh
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=magenta,bold'
@@ -90,7 +70,7 @@ eval "$(brew shellenv)"
 autoload -Uz compinit
 compinit
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/larseberhart/.cache/lm-studio/bin"
